@@ -1,0 +1,9 @@
+FROM node:14.3
+
+# 以下3行は docker-compose.yml にて上書き指定 (ボリュームマウント) されるため、記述していなくても良い
+
+COPY ./src/ /src/
+
+WORKDIR /src/
+
+CMD ["node", "/src/index.js"]

@@ -1,0 +1,9 @@
+FROM node:14.3
+
+# app-1 は、以下3行は docker-compose.yml で上書き指定していない
+
+COPY ./src/ /src/
+
+WORKDIR /src/
+
+CMD ["node", "/src/index.js"]
