@@ -1,0 +1,7 @@
+# 言語判定から除外する
+*.js linguist-detectable=false
+*.html linguist-detectable=false
+
+# Nginx と判定させる
+*.conf linguist-detectable=true
+*.conf linguist-language=Nginx
